@@ -2,80 +2,85 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xia's Blog</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- 頁頭區 -->
-    <header>
-        <h1>洪惠黠 的個人部落格</h1>
-        <nav>
-            <a href="#section1" style=" color: rgb(30, 126, 121);">關於我</a>
-            <a href="#section2" style=" color: rgb(30, 126, 121);">工作技能</a>
-            <a href="#section3" style=" color: rgb(30, 126, 121);">音訊作品</a>
-            <a href="#section4" style=" color: rgb(30, 126, 121);">視訊作品</a>
-            <a href="#section5" style=" color: rgb(30, 126, 121);">Logo 設計作品</a>
-            <a href="#section6" style=" color: rgb(30, 126, 121);">插畫作品</a>
-            <a href="#section7" style=" color: rgb(30, 126, 121);">水彩、素描作品</a>
+    <header class="header">
+        <h1 class="header-title">洪惠黠 的個人部落格</h1>
+        <nav class="nav">
+            <a href="#section1" class="nav-item">關於我</a>
+            <a href="#section2" class="nav-item">工作技能</a>
+            <a href="#section3" class="nav-item">音訊作品</a>
+            <a href="#section4" class="nav-item">視訊作品</a>
+            <a href="#section5" class="nav-item">Logo 設計作品</a>
+            <a href="#section6" class="nav-item">插畫作品</a>
+            <a href="#section7" class="nav-item">水彩、素描作品</a>
         </nav>
-        <br><hr>
     </header>
+    <hr>
     
     <!-- 主內容區 -->
     <main>
         <br>
         <!-- 個人介紹 -->
-        <article id="section1">
-            <header>
-                <h1>關於我</h1>
-                <p>這裡會放上我的作品！歡迎下滑瀏覽 ~</p>
-            </header>
-            <section>
-                <table cellspacing="20">
-                    <tr>
-                        <td><img src="assets\images\avatar.png" alt="xia picture" width="190" ></td>
-                        <td>
-                            <h1>洪惠黠</h1>
-                            <p>國立臺北教育大學<br>數位科技設計學系</p>
-                        </td>
-                    </tr>
-                </table>
-            </section>
+        <article class="article-me">
+            <article id="section1" class="section1">
+                <header>
+                    <h1>關於我</h1>
+                    <p>這裡會放上我的作品！歡迎下滑瀏覽 ~</p>
+                </header>
+                <section>
+                    <table cellspacing="20">
+                        <tr>
+                            <td><img src="assets\images\avatar.png" alt="xia picture" width="190" ></td>
+                            <td>
+                                <h1>洪惠黠</h1>
+                                <p>國立臺北教育大學<br>數位科技設計學系</p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+            
+            
+            <br>
+            <!-- 技能介紹 -->
+            <article id="section2">
+                <header>
+                    <h2>工作技能</h2>
+                </header>
+                <section class="skill">
+                    <section class="skill-project">
+                        <p class="skill-title">設計</p>
+                        <section class="skill-contect">
+                            <p class="skill-item">illustrator</p>
+                            <p class="skill-item">photoshop</p>
+                            <p class="skill-item">Clip Studio Paint</p>
+                        </section>
+                    </section>
+                    <section class="skill-project">
+                        <p class="skill-title">3D</p>
+                        <section class="skill-contect">
+                            <p class="skill-item">sketchup</p>
+                            <p class="skill-item">3dMax</p>
+                        </section>
+                    </section>
+                    <section class="skill-project">
+                        <p class="skill-title">程式</p>
+                        <section class="skill-contect">
+                            <p class="skill-item">C#</p>
+                            <p class="skill-item">C++</p>
+                            <p class="skill-item">java</p>
+                        </section>
+                    </section>
+                </section>
+            </article>
         </article>
-
         
         <br>
-        <!-- 技能介紹 -->
-        <article id="section2">
-            <header>
-                <h2>工作技能</h2>
-            </header>
-            <section>
-                <table>
-                    <colgroup>
-                        <col style="background-color: lightblue" />
-                    </colgroup>
-                    <tr>
-                        <td>設計</td>
-                        <td>
-                            <p>illustrator<br>photoshop<br>Clip Studio Paint</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3D</td>
-                        <td>
-                            <p>sketchup<br>3dMax</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>程式</td>
-                        <td>
-                            <p>C#<br>C++<br>java</p>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-        </article>
-
         <br>
         <!-- 音訊作品 -->
         <article id="section3">
@@ -132,6 +137,8 @@
             <img src="./assets/images/watercolor3.jpg" alt="水彩3" height="139">
         </article>
         <br>
+        <br>
+
     </main>
     
     
@@ -139,7 +146,7 @@
     <footer>
         <hr>
         <p>聯絡我：2lily0966846139@gmail.com</p>
-        <time datetime="2024-11-29">最後更新日期：2024年11月29日</time>
+        <time datetime="2024-11-29">最後更新日期：2024年12月21日</time>
     </footer>
 </body>
 </html>
